@@ -28,6 +28,12 @@ Partial Class masa1
         Me.nudTea = New System.Windows.Forms.NumericUpDown()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.KimlikDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UrunDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AdetDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TutarDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Table1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TablesDataSet = New projectCafe.TablesDataSet()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.btnCloseAccount = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
@@ -36,20 +42,14 @@ Partial Class masa1
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.pbTea = New System.Windows.Forms.PictureBox()
         Me.pbCoffee = New System.Windows.Forms.PictureBox()
-        Me.TablesDataSet = New projectCafe.TablesDataSet()
-        Me.Table1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Table1TableAdapter = New projectCafe.TablesDataSetTableAdapters.table1TableAdapter()
-        Me.KimlikDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UrunDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AdetDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TutarDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.nudCoffee, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudTea, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Table1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TablesDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbTea, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCoffee, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TablesDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Table1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -101,6 +101,45 @@ Partial Class masa1
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(453, 230)
         Me.DataGridView1.TabIndex = 4
+        '
+        'KimlikDataGridViewTextBoxColumn
+        '
+        Me.KimlikDataGridViewTextBoxColumn.DataPropertyName = "Kimlik"
+        Me.KimlikDataGridViewTextBoxColumn.HeaderText = "Kimlik"
+        Me.KimlikDataGridViewTextBoxColumn.Name = "KimlikDataGridViewTextBoxColumn"
+        Me.KimlikDataGridViewTextBoxColumn.ReadOnly = True
+        Me.KimlikDataGridViewTextBoxColumn.Visible = False
+        '
+        'UrunDataGridViewTextBoxColumn
+        '
+        Me.UrunDataGridViewTextBoxColumn.DataPropertyName = "Urun"
+        Me.UrunDataGridViewTextBoxColumn.HeaderText = "Urun"
+        Me.UrunDataGridViewTextBoxColumn.Name = "UrunDataGridViewTextBoxColumn"
+        Me.UrunDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'AdetDataGridViewTextBoxColumn
+        '
+        Me.AdetDataGridViewTextBoxColumn.DataPropertyName = "Adet"
+        Me.AdetDataGridViewTextBoxColumn.HeaderText = "Adet"
+        Me.AdetDataGridViewTextBoxColumn.Name = "AdetDataGridViewTextBoxColumn"
+        Me.AdetDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'TutarDataGridViewTextBoxColumn
+        '
+        Me.TutarDataGridViewTextBoxColumn.DataPropertyName = "Tutar"
+        Me.TutarDataGridViewTextBoxColumn.HeaderText = "Tutar"
+        Me.TutarDataGridViewTextBoxColumn.Name = "TutarDataGridViewTextBoxColumn"
+        Me.TutarDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'Table1BindingSource
+        '
+        Me.Table1BindingSource.DataMember = "table1"
+        Me.Table1BindingSource.DataSource = Me.TablesDataSet
+        '
+        'TablesDataSet
+        '
+        Me.TablesDataSet.DataSetName = "TablesDataSet"
+        Me.TablesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'btnSave
         '
@@ -182,48 +221,9 @@ Partial Class masa1
         Me.pbCoffee.TabIndex = 0
         Me.pbCoffee.TabStop = False
         '
-        'TablesDataSet
-        '
-        Me.TablesDataSet.DataSetName = "TablesDataSet"
-        Me.TablesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'Table1BindingSource
-        '
-        Me.Table1BindingSource.DataMember = "table1"
-        Me.Table1BindingSource.DataSource = Me.TablesDataSet
-        '
         'Table1TableAdapter
         '
         Me.Table1TableAdapter.ClearBeforeFill = True
-        '
-        'KimlikDataGridViewTextBoxColumn
-        '
-        Me.KimlikDataGridViewTextBoxColumn.DataPropertyName = "Kimlik"
-        Me.KimlikDataGridViewTextBoxColumn.HeaderText = "Kimlik"
-        Me.KimlikDataGridViewTextBoxColumn.Name = "KimlikDataGridViewTextBoxColumn"
-        Me.KimlikDataGridViewTextBoxColumn.ReadOnly = True
-        Me.KimlikDataGridViewTextBoxColumn.Visible = False
-        '
-        'UrunDataGridViewTextBoxColumn
-        '
-        Me.UrunDataGridViewTextBoxColumn.DataPropertyName = "Urun"
-        Me.UrunDataGridViewTextBoxColumn.HeaderText = "Urun"
-        Me.UrunDataGridViewTextBoxColumn.Name = "UrunDataGridViewTextBoxColumn"
-        Me.UrunDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'AdetDataGridViewTextBoxColumn
-        '
-        Me.AdetDataGridViewTextBoxColumn.DataPropertyName = "Adet"
-        Me.AdetDataGridViewTextBoxColumn.HeaderText = "Adet"
-        Me.AdetDataGridViewTextBoxColumn.Name = "AdetDataGridViewTextBoxColumn"
-        Me.AdetDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'TutarDataGridViewTextBoxColumn
-        '
-        Me.TutarDataGridViewTextBoxColumn.DataPropertyName = "Tutar"
-        Me.TutarDataGridViewTextBoxColumn.HeaderText = "Tutar"
-        Me.TutarDataGridViewTextBoxColumn.Name = "TutarDataGridViewTextBoxColumn"
-        Me.TutarDataGridViewTextBoxColumn.ReadOnly = True
         '
         'masa1
         '
@@ -249,10 +249,10 @@ Partial Class masa1
         CType(Me.nudCoffee, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudTea, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Table1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TablesDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbTea, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbCoffee, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TablesDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Table1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

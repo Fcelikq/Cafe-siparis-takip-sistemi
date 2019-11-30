@@ -8,6 +8,7 @@ Public Class masa1
     Dim baglan As New OleDbConnection("provider=microsoft.jet.oledb.4.0;Data Source= C:\Users\FIRAT\Desktop\Cafe\dataBase\Tables.mdb")
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
         'TODO: This line of code loads data into the 'TablesDataSet.table1' table. You can move, or remove it, as needed.
         Me.Table1TableAdapter.Fill(Me.TablesDataSet.table1)
         toplam()
@@ -163,7 +164,7 @@ Public Class masa1
             komut.Connection = baglan
             komut.CommandType = CommandType.Text
 
-            For i As Integer = 0 To DataGridView1.Rows.Count - 2
+            For i As Integer = 0 To DataGridView1.Rows.Count - 1
                 totUrun = DataGridView1.Rows(i).Cells(1).Value
                 totAdet = Convert.ToInt32(DataGridView1.Rows(i).Cells(2).Value)
                 totTutar = Convert.ToDouble(DataGridView1.Rows(i).Cells(3).Value)
@@ -180,4 +181,7 @@ Public Class masa1
 
     End Sub
 
+    Private Sub masa1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Masalar.Show()
+    End Sub
 End Class

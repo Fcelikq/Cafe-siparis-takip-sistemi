@@ -40,4 +40,13 @@
         table3.BackColor = Color.AliceBlue
 
     End Sub
+
+    Private Sub Masalar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
+    End Sub
+
+    Private Sub Masalar_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Giris.Close()
+
+    End Sub
 End Class

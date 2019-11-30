@@ -23,11 +23,11 @@ Partial Class Giris
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btnGiris = New System.Windows.Forms.Button()
+        Me.txtId = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtPass = New System.Windows.Forms.TextBox()
-        Me.txtId = New System.Windows.Forms.TextBox()
+        Me.btnGiris = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,17 +44,12 @@ Partial Class Giris
         Me.Panel1.Size = New System.Drawing.Size(309, 168)
         Me.Panel1.TabIndex = 0
         '
-        'btnGiris
+        'txtId
         '
-        Me.btnGiris.BackColor = System.Drawing.Color.DarkGreen
-        Me.btnGiris.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnGiris.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnGiris.Location = New System.Drawing.Point(120, 118)
-        Me.btnGiris.Name = "btnGiris"
-        Me.btnGiris.Size = New System.Drawing.Size(100, 23)
-        Me.btnGiris.TabIndex = 2
-        Me.btnGiris.Text = "Giris"
-        Me.btnGiris.UseVisualStyleBackColor = False
+        Me.txtId.Location = New System.Drawing.Point(120, 39)
+        Me.txtId.Name = "txtId"
+        Me.txtId.Size = New System.Drawing.Size(100, 20)
+        Me.txtId.TabIndex = 0
         '
         'Label2
         '
@@ -83,12 +78,17 @@ Partial Class Giris
         Me.txtPass.Size = New System.Drawing.Size(100, 20)
         Me.txtPass.TabIndex = 0
         '
-        'txtId
+        'btnGiris
         '
-        Me.txtId.Location = New System.Drawing.Point(120, 39)
-        Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(100, 20)
-        Me.txtId.TabIndex = 0
+        Me.btnGiris.BackColor = System.Drawing.Color.DarkGreen
+        Me.btnGiris.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnGiris.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnGiris.Location = New System.Drawing.Point(120, 118)
+        Me.btnGiris.Name = "btnGiris"
+        Me.btnGiris.Size = New System.Drawing.Size(100, 23)
+        Me.btnGiris.TabIndex = 2
+        Me.btnGiris.Text = "Giris"
+        Me.btnGiris.UseVisualStyleBackColor = False
         '
         'Giris
         '

@@ -66,7 +66,7 @@ Partial Class Masalar
         Me.table5.Location = New System.Drawing.Point(12, 12)
         Me.table5.Name = "table5"
         Me.table5.SelectedIndex = 0
-        Me.table5.Size = New System.Drawing.Size(688, 404)
+        Me.table5.Size = New System.Drawing.Size(964, 469)
         Me.table5.TabIndex = 2
         '
         'TabPage1
@@ -82,7 +82,7 @@ Partial Class Masalar
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(680, 378)
+        Me.TabPage1.Size = New System.Drawing.Size(956, 443)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "RightSide"
         '
@@ -149,7 +149,7 @@ Partial Class Masalar
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(639, 352)
+        Me.TabPage2.Size = New System.Drawing.Size(956, 443)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "LeftSide"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -181,7 +181,7 @@ Partial Class Masalar
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(639, 352)
+        Me.TabPage3.Size = New System.Drawing.Size(956, 443)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "AutSide"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -208,7 +208,7 @@ Partial Class Masalar
         '
         'btnTable
         '
-        Me.btnTable.Location = New System.Drawing.Point(702, 12)
+        Me.btnTable.Location = New System.Drawing.Point(982, 34)
         Me.btnTable.Name = "btnTable"
         Me.btnTable.Size = New System.Drawing.Size(104, 23)
         Me.btnTable.TabIndex = 3
@@ -220,11 +220,11 @@ Partial Class Masalar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkGreen
-        Me.ClientSize = New System.Drawing.Size(818, 450)
+        Me.ClientSize = New System.Drawing.Size(1098, 541)
         Me.Controls.Add(Me.btnTable)
         Me.Controls.Add(Me.table5)
         Me.Name = "Masalar"
-        Me.Text = "Form2"
+        Me.Text = "Masalar"
         Me.table5.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
